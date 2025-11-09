@@ -1,0 +1,11 @@
+# Ignore dataset and intermediate files
+Data/
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.joblib
+
+# Ignore python cache
+__pycache__/
