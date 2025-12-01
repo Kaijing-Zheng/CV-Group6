@@ -91,7 +91,7 @@ def read_image_bgr(path: Path, max_side: Optional[int]=None) -> np.ndarray:
     return bgr
 
 def stratified_split(paths: List[Path], labels: List[int], 
-                     train_ratio=0.7, val_ratio=0.3,
+                     train_ratio=0.8, val_ratio=0.2,
                      seed=42):
     """
     Simple stratified split without sklearn.
@@ -209,8 +209,8 @@ def main():
                     help="Mediapipe min_detection_confidence")
     ap.add_argument("--static_image_mode", action="store_true",
                     help="Use Mediapipe static image mode (recommended for photos)")
-    ap.add_argument("--train_ratio", type=float, default=0.7)
-    ap.add_argument("--val_ratio", type=float, default=0.15)
+    ap.add_argument("--train_ratio", type=float, default=0.8)
+    ap.add_argument("--val_ratio", type=float, default=0.2)
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 
