@@ -33,7 +33,7 @@ def list_images_by_label(root: Path, patterns: List[str]) -> Dict[str, List[Path
     return label_to_files
 
 def extract_hand_landmarks(img_bgr: np.ndarray,
-                           hands_detector: mp_hands.Hands) -> Optional[np.ndarray]:
+                           hands_detector: "mp.solutions.hands.Hands".Hands) -> Optional[np.ndarray]:
     """
     Returns (21, 3) array of (x,y,z) in normalized image coordinates for the BEST hand
     (highest detection score) or None if no hands.

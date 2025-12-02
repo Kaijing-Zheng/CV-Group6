@@ -1,0 +1,9 @@
+# Core dependencies for `asl_landmarks_pipeline.py`
+mediapipe==0.10.14
+opencv-python>=4.7.0
+pillow>=9.0.0
+tqdm>=4.0.0
+numpy>=1.23.0
+scikit-learn>=1.2.0
+matplotlib>=3.5.0
+joblib>=1.2.0
