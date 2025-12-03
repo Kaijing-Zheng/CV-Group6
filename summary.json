@@ -1,0 +1,47 @@
+{
+  "data_root": "/content/drive/MyDrive/Duke University/CV-Group6/asl_alphabet_train",
+  "output_dir": "/content/drive/MyDrive/Duke University/CV-Group6",
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "del",
+    "nothing",
+    "space"
+  ],
+  "counts_after_extraction": {
+    "train": 46808,
+    "val": 13360,
+    "test": 6663
+  },
+  "splits": {
+    "train_ratio": 0.7,
+    "val_ratio": 0.2,
+    "test_ratio": 0.1
+  },
+  "feature_dim": 42,
+  "normalization": "center by mean(x,y), divide by max-abs; z removed"
+}
