@@ -1,4 +1,5 @@
-#New Mediapipe ran in Google Colab
+#New Mediapipe ran in Google Colab (Use TPU) that splits training into
+#Training:validation:testing = 7:2:1
 #Change data directory depending on location of data
 #Obtained from ChatGPT
 import os
