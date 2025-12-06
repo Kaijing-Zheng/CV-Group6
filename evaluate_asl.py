@@ -28,7 +28,7 @@ def read_image_bgr(path: Path, max_side: int | None = 512) -> np.ndarray:
     return arr[:, :, ::-1].copy()  # BGR
 
 
-def extract_hand_landmarks(img_bgr: np.ndarray, hands_detector: "mp.solutions.hands.Hands".Hands) -> np.ndarray | None:
+def extract_hand_landmarks(img_bgr: np.ndarray, hands_detector: mp_hands.Hands) -> np.ndarray | None:
     rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
     result = hands_detector.process(rgb)
     if not result.multi_hand_landmarks or not result.multi_handedness:
